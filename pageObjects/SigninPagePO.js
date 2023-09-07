@@ -13,8 +13,8 @@ class SigninPagePO{
         }
     async  signinToChatWay()
     {
-        await this.loginEmailLocator.type('konguyogesh97@gmail.com');
-        await this.loginPassswordLocator.type('Yogesh@123@');
+        await this.loginEmailLocator.type('yogesh+1@premio.io');
+        await this.loginPassswordLocator.type('Yogesh@1234@');
         await this.loginInbuttonLocator.click()
     }
     async goToChatWay()
@@ -23,7 +23,7 @@ class SigninPagePO{
     }
     async goToPozhilGarden()
     {
-        await this.page.goto("http://pozhilgarden.com/");
+        await this.page.goto("https://sveltekit-1-git-main-yogesh1-premioio.vercel.app/");
     }
 
 }
