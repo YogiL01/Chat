@@ -1,0 +1,31 @@
+class SigninPagePO{
+    
+    constructor(page)
+    {
+        this.page=page;
+        this.loginEmailLocator=page.getByPlaceholder('Enter Your Email');
+        this.loginPassswordLocator=page.getByPlaceholder('Your Password');
+        this.loginInbuttonLocator=page.getByRole('button', { name: 'Sign In' });
+        this.chatWayLauncher =page.locator('//*[@class="chatway-launcher"]')
+        this.chatWayPopUpFrame=page.frameLocator("#chatway_widget_app");
+        this.unresolvedTab=page.locator('//div[@class="chat--filter"]//span[contains(text(),"Unresolved")]/..');
+        this.agentWriteMessageLocator=page.locator('//textarea[@placeholder="Write your message..."][@name=""]');
+        }
+    async  signinToChatWay()
+    {
+        await this.loginEmailLocator.type('konguyogesh97@gmail.com');
+        await this.loginPassswordLocator.type('Yogesh@123@');
+        await this.loginInbuttonLocator.click()
+    }
+    async goToChatWay()
+    {
+        await this.page.goto("https://go.chatway.app/login");
+    }
+    async goToPozhilGarden()
+    {
+        await this.page.goto("http://pozhilgarden.com/");
+    }
+
+}
+module.exports ={SigninPagePO};
+
