@@ -49,7 +49,7 @@ module.exports = defineConfig({
     },
     {
       name: 'Edge',
-      use: { ...devices['Desktop Edge'], headless :false,channel: 'msedge' },
+      use: { ...devices['Desktop Edge'],channel: 'msedge' },
     },
   ],
 });
