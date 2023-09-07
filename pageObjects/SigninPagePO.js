@@ -23,7 +23,7 @@ class SigninPagePO{
     }
     async goToPozhilGarden()
     {
-        await this.page.goto("https://sveltekit-1-git-main-yogesh1-premioio.vercel.app/");
+        await this.page.goto("https://sveltekit-ruby-chi.vercel.app/");
     }
 
 }
