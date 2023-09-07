@@ -13,7 +13,7 @@ class SigninPagePO{
         }
     async  signinToChatWay()
     {
-        await this.loginEmailLocator.type('yogesh+10@premio.io');
+        await this.loginEmailLocator.type('yogesh+11@premio.io');
         await this.loginPassswordLocator.type('Yogesh@1234@');
         await this.loginInbuttonLocator.click()
     }
